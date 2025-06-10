@@ -2,7 +2,7 @@
 def lengthOfLongestSubstring(s: str) -> int:
     findLongest = ''
 
-    for i in range(len(s)):
+    for i in range(round(len(s)/2)):
         for j in range(i, len(s)):
             substring = s[i:j+1]
             unique = "".join(dict.fromkeys(substring))
